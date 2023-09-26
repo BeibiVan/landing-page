@@ -1,0 +1,109 @@
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    }
+
+:root {
+        --main-bg-color: #fefae0;
+        --header-color: #283618;
+        --button-color: #606c38;
+        --rare-color: #dda15e;
+        
+      }
+
+header {width: 100%;
+        height: 80px;
+        background-color: var(--header-color);
+        color: var(--main-bg-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+
+.logo {font-weight: bold;
+    font-size: 40px;
+    font-style: italic;
+    color: var(--rare-color);
+    transition: all 0.3s;
+    border-radius: 5px;
+    cursor: pointer;}
+
+
+ul {list-style-type: none;}
+
+
+ul button {background-color: var(--button-color);
+    color: var(--main-bg-color);
+    border-radius: 1px;
+    height: 30px;
+    padding: 0 5px;
+    border: none;
+    transition: all 0.3s;
+    }
+    
+ul button:hover {background-color: var(--rare-color);
+    }
+
+li {display: inline-block;
+        margin: 0 10px;
+              }
+
+li a {text-decoration: none;
+        color: var(--main-bg-color)}
+
+main {background-color: var(--main-bg-color);}
+
+.banner-img {width: 100%;
+    height: 500px;
+    background-image: url(./heroimg.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(15, 14, 14, 0.795);
+    }
+
+.banner-texto {color: var(--rare-color);
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin-top: 200px;
+    }
+
+.banner-ubicacion {background-color: var(--button-color);
+    color: var(--main-bg-color);
+    border-radius: 1px;
+    height: 30px;
+    padding: 0 5px;
+    border: none;
+    transition: all 0.3s;
+    margin-top: 10px;
+    }
+
+.banner-ubicacion a {text-decoration: none;
+    color: var(--main-bg-color)}
+
+.banner-ubicacion:hover {background-color: var(--rare-color);
+}
+
+.first-container {width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;}
+
+.first-container img {width: 80px;
+    height: 80px;
+    }
+
+.first-container_producto {  
+    text-align: center;
+    margin-right: 50px;}
+
+.first-container_delivery {  
+    text-align: center;
+    margin-right: 50px;}
