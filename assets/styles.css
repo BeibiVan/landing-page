@@ -33,6 +33,23 @@ header {width: 100%;
     border-radius: 5px;
     cursor: pointer;}
 
+.icon-menu {display: none;
+        width: 40px;
+        height: 40px;}
+
+.responsive_nav {display: none;
+    list-style-type: none;}
+
+.responsive_nav button {background-color: var(--button-color);
+    color: var(--main-bg-color);
+    border-radius: 1px;
+    height: 30px;
+    padding: 0 5px;
+    border: none;
+    transition: all 0.3s;}
+
+.responsive_nav button:hover {background-color: var(--rare-color);}
+
 
 ul {list-style-type: none;}
 
@@ -184,4 +201,52 @@ li a {text-decoration: none;
     width: 40px;
     height: 40px;
     margin-left: 20px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 767px) {
+    
+
+        .icon-menu {display: flex;
+        width: 40px;
+        height: 40px;}
+
+       .nav {display: none;}
+        
+       .first-container img {width: 60px;
+        height: 60px;
+        }
+    
+        .first-container_producto {  
+        text-align: center;
+        margin-right: 30px;
+        margin-left: 20px;
+        width: auto;}
+    
+        .first-container_delivery {  
+        text-align: center;
+        margin-right: 30px;
+        margin-left: 10px;
+        width: auto;}
+    
+        .second-container img {width: 150px;
+            height: 100px;
+            border-radius: 20px;
+            object-fit: cover;
+            transition: all 0.3s;
+            }
+        
+        .second-container img:hover {
+            padding: 20px;
+            border-radius: 40px;
+        }
+     
+        .semillas h4 {margin: 35px 35px}
+        .granos h4 {margin: 35px 45px;}
+        .celiacos h4 {margin: 36px 34px;}
+        .frutos h4 {margin: 35px 22px;
+            font-size: 18px;}
+
+        .third-container {height: 470px;}
+        .third-container_video {width: 300px;
+            height: 200px;}
 }
